@@ -1,5 +1,7 @@
 # soda-machine
 
+[![CircleCI](https://circleci.com/gh/scirop/soda-machine.svg?style=svg)](https://circleci.com/gh/scirop/soda-machine)
+
 A simple web-app to add/remove soda machines and add/remove sodas from the soda Machines
 
 Developed for Python3
