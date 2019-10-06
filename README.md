@@ -4,6 +4,9 @@
 
 A simple web-app to add/remove soda machines and add/remove sodas from the soda Machines
 
+Basic code inspiration source -- [Jennie](https://github.com/jennielees/flask-sqlalchemy-example)
+
+
 Developed for Python3
 
 ### Assumptions:
