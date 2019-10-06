@@ -1,0 +1,36 @@
+<h3>Remove Machine</h3>
+<h3>Machines list</h3>
+<ol>
+{% for machine in machines %}
+    <li>{{ machine.machine_name }}
+{% endfor %}
+</ol>
+
+{% if machine %}
+
+<p><strong>{{machine}}</strong> successfully removed.</p>
+
+{% endif %}
+
+{% if error %}
+
+<p><strong>{{error}}</strong>. Try again below.</p>
+
+{% endif %}
+
+<p><a href="/">Back to Machine List</a></p>
+
+<!-- The form action and method correspond to a Flask route -->
+<form action="/removemachine" method="POST">
+
+<label for="name_id">Machine Name</label>
+  <select id="name_id"name="name_field">
+    {% for machine in machines %}
+      <option value="{{ machine.machine_name }}">{{ machine.machine_name }}</option>
+    {% endfor %}
+  </select>
+
+<!-- We need a submit button to submit a form! -->
+<input type="submit" value="Remove"/>
+
+</form>

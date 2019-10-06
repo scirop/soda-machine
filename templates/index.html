@@ -1,0 +1,15 @@
+<h3>Soda Machines Menu</h3>
+
+<ol>
+{% for machine in machines %}
+    <li>{{ machine.machine_name }} - Capacity {{ machine.machine_capacity }} ||
+      sodas - {{ machine.sodas }}
+{% endfor %}
+</ol>
+
+<ul>
+  <li><a href="/addmachine">Add Machine</a></li>
+  <li><a href="/removemachine">Remove Machine</a></li>
+  <li><a href="/addsodas">Add Sodas</a></li>
+  <li><a href="/removesodas">Remove Sodas</a></li>
+</ul>

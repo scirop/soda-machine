@@ -1,0 +1,33 @@
+<h3>Add Machine</h3>
+
+{% if machine %}
+
+<p><strong>{{machine.machine_name}}</strong> successfully created! Add another below.</p>
+
+{% endif %}
+
+{% if error %}
+
+<p><strong>{{error}}</strong>. Try again below.</p>
+
+{% endif %}
+
+<p><a href="/">Back to Machine List</a></p>
+
+<!-- The form action and method correspond to a Flask route -->
+<form action="/addmachine" method="POST">
+
+<label for="name_id">Machine Name</label>
+<input id="name_id" name="name_field" type="text" />
+
+<label for="capacity_id">Capacity</label>
+<input id="capacity_id" name="capacity_field" type="text" size="4"/>
+
+<label for="sodas_id">Sodas (Comma separated -- case sensitive)</label>
+<input id="sodas_id" name="sodas_field" type="text" />
+
+
+<!-- We need a submit button to submit a form! -->
+<input type="submit" value="Add"/>
+
+</form>
