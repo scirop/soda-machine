@@ -36,7 +36,7 @@ def removemachine():
         return render_template('removemachine.html', machines=machines)
     machine_name = (request.form.get('name_field'))
     deletion_reponse = models.delete_machine(machine_name)
-    machines = Machine.query.all()
+    machines = models.Machine.query.all()
     if deletion_reponse:
         machine = machine_name
         error = None
@@ -71,7 +71,7 @@ def removesodas():
     machine_name = (request.form.get('name_field'))
     pop_sodas = request.form.get('sodas_field')
     deletion_reponse = models.delete_sodas(machine_name, pop_sodas)
-    machines = Machine.query.all()
+    machines = models.Machine.query.all()
     if deletion_reponse=="success":
         success = "Sodas removed from machine successfully."
         error = None
