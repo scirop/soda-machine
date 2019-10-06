@@ -19,10 +19,10 @@ Developed for Python3
 5. In case the soda is repeated, we add a numeric suffix, e.g. pepsi_1, pepsi_2 etc
 6. Soda names are entered manually for creation and deletion operations
 
-Run the following command if the application is being run for the first time
+Run the following before spinning up the app, to create the initial db
 
 ```
-python3 app.py create
+python3 models.py
 ```
 
 Run the following for subsequent runs
