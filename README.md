@@ -2,9 +2,11 @@
 
 [![CircleCI](https://circleci.com/gh/scirop/soda-machine.svg?style=svg)](https://circleci.com/gh/scirop/soda-machine)
 
-A simple web-app to add/remove soda machines and add/remove sodas from the soda Machines
+A simple flask_sqlalchemy based web-app to add/remove soda machines
+and add/remove sodas from the soda Machines
 
-Basic code inspiration source -- [Jennie](https://github.com/jennielees/flask-sqlalchemy-example)
+Credits to [Jennie](https://github.com/jennielees/flask-sqlalchemy-example) for the simple
+flask_sqlalchemy example app.
 
 
 Developed for Python3
