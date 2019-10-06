@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 import sys
+import os
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 #initialize app
 app = Flask(__name__)
