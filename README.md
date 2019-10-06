@@ -25,3 +25,5 @@ Run the following for subsequent runs
 ```
 python3 app.py
 ```
+
+Hosted on [Heroku](https://soda-machine.herokuapp.com)
